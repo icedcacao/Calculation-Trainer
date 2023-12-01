@@ -8,7 +8,13 @@
       "src": "/calculation-trainer/components/images/favicon.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/calculation-trainer/components/images/favicon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ]
 }
