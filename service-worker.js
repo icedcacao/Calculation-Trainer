@@ -3,16 +3,16 @@ const CACHE = "cacheV1";
 
 // Select files for caching.
 let urlsToCache = [
-  "/",
-  "/index.html",
-  "/components",
-  "/components/images",
-  "/components/images/favicon.png",
-  "/components/scripts",
-  "/components/scripts/main.js",
-  "/components/scripts/pwa-handler.js",
-  "/components/styles",
-  "/components/styles/main.css",
+  "/calculation-trainer",
+  "/calculation-trainer/index.html",
+  "/calculation-trainer/components",
+  "/calculation-trainer/components/images",
+  "/calculation-trainer/components/images/favicon.png",
+  "/calculation-trainer/components/scripts",
+  "/calculation-trainer/components/scripts/main.js",
+  "/calculation-trainer/components/scripts/pwa-handler.js",
+  "/calculation-trainer/components/styles",
+  "/calculation-trainer/components/styles/main.css",
 ];
 
 // Cache all the selected items once application is installed.
