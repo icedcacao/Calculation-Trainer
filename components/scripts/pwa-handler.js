@@ -16,15 +16,4 @@ let beforeInstallEvent;
 window.addEventListener("beforeinstallprompt", (event) => {
   event.preventDefault();
   beforeInstallEvent = event;
-  installButton.style.display = "block";
-});
-
-// Prompt for Installation when install button is clicked.
-installButton.addEventListener("click", () => {
-  beforeInstallEvent.prompt().then((choice) => {
-    // Hide the install button as its purpose is over.
-    if (choice.outcome == "accepted") {
-      installButton.style.display = "none";
-    }
-  });
 });
