@@ -25,10 +25,6 @@ self.addEventListener("install", (event) => {
   );
 });
 
-self.addEventListener("activate", (event) => {
-  console.log("Service worker activate event!");
-});
-
 // Whenever a resource is requested, return if its cached else fetch the resourcefrom server.
 self.addEventListener("fetch", (event) => {
   event.respondWith(
