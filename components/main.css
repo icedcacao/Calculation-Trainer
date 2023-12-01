@@ -1,0 +1,202 @@
+:root {
+  --vh: 8.85px;
+  --key-height: 98.64999999999999px;
+  --vh-keyboard: 490.4px;
+  --color: hsl(120, 25%, 40%);
+  --background: hsl(0, 0%, 3%);
+  --foreground: hsl(0, 0%, 6%);
+  --color9: white;
+  --color8: hsl(0, 0%, 79%);
+  --color7: hsl(0, 0%, 68%);
+  --color6: hsl(0, 0%, 50%);
+  --color5: hsl(0, 0%, 36%);
+  --color4: hsl(0, 0%, 25%);
+  --color3: hsl(0, 0%, 12%);
+  --color2: hsl(0, 0%, 8%);
+  --color1: hsl(0, 0%, 4%);
+  --color0: black;
+  --weak-opacity: 0.12;
+  --strong-opacity: 0.3;
+}
+
+body {
+  margin: 0 !important;
+  overflow-x: hidden;
+  text-align: center;
+  font-family: sans-serif;
+  color: var(--color7);
+  background: var(--background);
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+body,
+#app,
+.main {
+  display: flex;
+  flex-flow: column;
+}
+
+main,
+.main {
+  overflow-x: hidden;
+  flex: 0 0 100dvh;
+  justify-content: space-between;
+}
+/* Need fixing */
+
+.header {
+  display: flex;
+  background: var(--color2);
+  border-bottom: 1px solid var(--color3);
+  flex-flow: row nowrap;
+  flex: 0 0 auto;
+}
+
+.banner {
+  letter-spacing: 0.3em;
+  padding: 0.75em 1em;
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--color4);
+}
+
+.math {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  font-size: calc(1.4rem + 2vh + 4vw);
+}
+.problem {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  transition-property: none;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.1s;
+  cursor: pointer;
+  margin-bottom: 0px;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+/* Question styling */
+.question-wrapper {
+  display: flex;
+  flex-flow: column;
+  color: var(--color8);
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.question {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  padding: 0 0.2em;
+  transition: opacity 0s;
+}
+
+/* Answer styling */
+.answer-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  padding-right: 0.2em;
+}
+.answer {
+  color: var(--color5);
+  display: flex;
+  opacity: 0.5;
+}
+
+/* Keypad styling */
+.keypad {
+  display: flex;
+  flex-flow: column;
+  flex: 0 0 auto;
+}
+.keypad > section {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.keypad-button {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: var(--color6);
+  background: var(--color2);
+  height: var(--key-height);
+  border-top: 1px solid var(--color5);
+  text-transform: uppercase;
+  user-select: none;
+}
+.keypad-button:active {
+  background: var(--color3);
+}
+.keypad-button--left {
+  flex-basis: 33%;
+}
+.keypad-button--middle {
+  flex: 1;
+  border-right: 1px solid var(--color5);
+  border-left: 1px solid var(--color5);
+}
+.keypad-button--right {
+  flex-basis: 33%;
+}
+.keypad-button--one {
+  border-top: 0;
+}
+.keypad-button--four:first-child,
+.keypad-button--four:last-child {
+  font-size: 22px;
+  letter-spacing: 4px;
+}
+@media (max-width: 770px) {
+  .keypad-button {
+    font-size: 28px;
+  }
+  .keypad-button--four:first-child,
+  .keypad-button--four:last-child {
+    font-size: 20px;
+    letter-spacing: 3.5px;
+  }
+}
+@media (max-width: 600px) {
+  .keypad-button {
+    font-size: 26px;
+  }
+  .keypad-button--four:first-child,
+  .keypad-button--four:last-child {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+}
+@media (max-width: 450px) {
+  .keypad-button {
+    font-size: 22px;
+  }
+  .keypad-button--four:first-child,
+  .keypad-button--four:last-child {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 370px) {
+  .keypad-button {
+    font-size: 20px;
+  }
+  .keypad-button--four:first-child,
+  .keypad-button--four:last-child {
+    font-size: 12px;
+  }
+}
