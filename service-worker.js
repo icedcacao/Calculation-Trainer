@@ -11,8 +11,7 @@ let urlsToCache = [
   "/calculation-trainer/components/scripts",
   "/calculation-trainer/components/scripts/main.js",
   "/calculation-trainer/components/scripts/pwa-handler.js",
-  "/calculation-trainer/components/styles",
-  "/calculation-trainer/components/styles/main.css",
+  "/calculation-trainer/components/main.css",
 ];
 
 // Cache all the selected items once application is installed.
