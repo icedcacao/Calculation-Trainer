@@ -5,10 +5,7 @@ const CACHE = "cacheV1";
 let urlsToCache = [
   "/calculation-trainer",
   "/calculation-trainer/index.html",
-  "/calculation-trainer/components",
-  "/calculation-trainer/components/images",
   "/calculation-trainer/components/images/favicon.png",
-  "/calculation-trainer/components/scripts",
   "/calculation-trainer/components/scripts/main.js",
   "/calculation-trainer/components/scripts/pwa-handler.js",
   "/calculation-trainer/components/main.css",
